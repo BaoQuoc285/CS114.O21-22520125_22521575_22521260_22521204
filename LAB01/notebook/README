@@ -5,7 +5,9 @@ filter là ngưỡng thresh hold để quyết định giữ lại những pixel
 
 CHỈNH SỬA
 Sử dụng contour box đển tìm ra các nét mực và sau đó đóng khung bounding box.
-Vì boungding box có thể sẽ quá khít với nét mực làm mất chi tiết nên ta thêm hệ số delta- độ dời làm cho bounding box rộng hơn. sau đó crop img từ bouding box đã có và lí do thay vì resize mà lại crop ảnh trước mới resize vì khi từ 1 ảnh lớn resize về sẽ làm cho ảnh bị mất thông tin khá nhiều nên crop ảnh rồi mới resize sẽ đỡ hơn.
+Vì boungding box có thể sẽ quá khít với nét mực làm mất chi tiết nên ta thêm hệ số delta- độ dời làm cho bounding box rộng hơn. 
+sau đó crop img từ bouding box đã có và lí do thay vì resize mà lại crop ảnh trước mới resize vì khi từ 1 ảnh lớn resize về sẽ làm cho ảnh bị mất thông tin khá nhiều 
+nên crop ảnh rồi mới resize sẽ đỡ hơn.
 Thực hiện chuyển đổi ảnh qua trắng đen và resize lại 28*28 cho mô hình dự đoán.
 
 KẾT QUẢ
