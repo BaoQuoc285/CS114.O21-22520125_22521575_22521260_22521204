@@ -1,0 +1,15 @@
+giải thích parameter của hàm run_example() vì đây là hàm được chỉnh sửa nhiều nhất
+delta la độ đời cho bounding box lớn nhất contour box
+tham khảo contour tại: https://yash-kukreja-98.medium.com/recognizing-handwritten-digits-in-real-life-images-using-cnn-3b48a9ae5e3?fbclid=IwAR0AaDW3KN4sgnmpDrLlfhfHYMdEFgbPfgsEY1LiFt3bZjB0pTkJYMwX4-M_aem_AZzBz2-1SpcQdKn8EY67GBRcNdHtTFEC5LEWYAESzHEfOwe7pp6qlHhjh7jxCIEzrvxiQGRkVrD3UVP0CtM2EcGm
+filter là ngưỡng thresh hold để quyết định giữ lại những pixel có nét mực
+
+CHỈNH SỬA
+Sử dụng contour box đển tìm ra các nét mực và sau đó đóng khung bounding box.
+Vì boungding box có thể sẽ quá khít với nét mực làm mất chi tiết nên ta thêm hệ số delta- độ dời làm cho bounding box rộng hơn. sau đó crop img từ bouding box đã có và lí do thay vì resize mà lại crop ảnh trước mới resize vì khi từ 1 ảnh lớn resize về sẽ làm cho ảnh bị mất thông tin khá nhiều nên crop ảnh rồi mới resize sẽ đỡ hơn.
+Thực hiện chuyển đổi ảnh qua trắng đen và resize lại 28*28 cho mô hình dự đoán.
+
+KẾT QUẢ
+Kết quả đúng được 31/60 test case
+22/30 test đúng cho data_1 và 9/30 test đúng cho data_2
+Lí do có sự chênh lệch này phụ thuộc vào việc người dùng chỉnh độ lớn của filter để phù hợp với ảnh chụp của mình vì mỗi thiết bị sẽ có độ sáng khác nhau
+
