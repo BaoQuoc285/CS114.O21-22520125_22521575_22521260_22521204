@@ -10,10 +10,10 @@
 
 ## GIỚI THIỆU BẢN THÂN
 <a name="gioithieubanthan"></a>
-* **Họ và tên**: Đinh Nhật Trường
-* **MSSV**: 22521575
-* **Khoa**: Khoa học máy tính
-* **Lớp sinh hoạt**: KHMT.04
+* **Họ và tên**: Trịnh Quốc Bảo
+* **MSSV**: 22520125
+* **Khoa**: Khoa Học và Kĩ Thuật Thông Tin
+* **Lớp sinh hoạt**: CNNB.1
 
 ## GIỚI THIỆU MÔN HỌC
 <a name="gioithieumonhoc"></a>
